@@ -1,12 +1,17 @@
-form(action="/student/search", method="get")
-    input(type="text",name="name",value=key)
-    button Search
+extends ../layout/common.pug
+block content
+
+    form(action="/student/search", method="get")
+        div(class="col")
+            input(class="form-control",type="text",name="name",value=key)
+        div(class="col")
+            button(class="btn btn-primary") Search
     
 
-ul
-    each s in students
-        li
-            span= s.name
-            a(href="/student/detail/"+s.id) Detail
+    ul
+        each s in students
+            li
+                span= s.name
+                a(href="/student/detail/"+s.id) Detail
 
-a(href="/student/add") add
+    a(href="/student/add") add
