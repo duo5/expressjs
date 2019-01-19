@@ -23,4 +23,6 @@ app.get('/',(req,res) => res.render('index',
 
 app.use('/student',studentRoute)
 
+app.use(express.static('public'))
+
 app.listen(port,() => console.log('listening on port'+port))
