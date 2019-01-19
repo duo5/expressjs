@@ -5,6 +5,8 @@ form(action="/student/search", method="get")
 
 ul
     each s in students
-        li= s.name 
+        li
+            span= s.name
+            a(href="/student/detail/"+s.id) Detail
 
 a(href="/student/add") add
