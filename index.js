@@ -2,10 +2,13 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
 const port = 3000
-const students = [
-    {name:"duong23"},
-    {name:"bac"}
-]
+const low = require('lowdb')
+const FileSync = require('lowdb/adapters/FileSync')
+const adapter = new FileSync('db.json')
+const db = low(adapter)
+
+
+
 
 app.set('view engine', 'pug')
 
@@ -16,12 +19,12 @@ app.get('/',(req,res) => res.render('index',
 {name:"duong"}
 ))
 app.get('/student',(req,res) => res.render('student',{
-    students:students
+    students:db.get('students').value()
 }))
 
 app.get('/student/search',(req,res) => {
     const que = req.query.name
-    const matchStudents = students.filter((student) => {
+    const matchStudents = db.get('students').value().filter((student) => {
         return student.name.indexOf(que) !== -1;
     })
     res.render('student',{
@@ -33,7 +36,7 @@ app.get('/student/add',(req,res) => {
     res.render('add');
 })
 app.post('/student/add',(req,res) => {
-    students.push(req.body)
+    db.get('students').push(req.body).write()
     res.redirect('/student')
 })
 app.listen(port,() => console.log('listening on port'+port))
