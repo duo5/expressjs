@@ -1,3 +1,10 @@
+form(action="/student/search", method="get")
+    input(type="text",name="name",value=key)
+    button Search
+    
+
 ul
     each s in students
         li= s.name 
+
+a(href="/student/add") add
