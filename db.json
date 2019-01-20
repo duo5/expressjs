@@ -2,35 +2,8 @@
   "students": [
     {
       "name": "duong231998",
-      "id": "R8gnbFZ07"
-    },
-    {
-      "name": "Hoàng Xuân Đương",
-      "id": "Xbu1TvLnn"
-    },
-    {
-      "name": "ac",
-      "id": "xtLVWz8Vz"
-    },
-    {
-      "name": "ac",
-      "id": "pAKJF7OyQ"
-    },
-    {
-      "name": "dsa",
-      "id": "eZfPMssSj"
-    },
-    {
-      "name": "duong23",
-      "id": "yT95sTGJo"
-    },
-    {
-      "name": "duong231998",
       "phone": "0914186024",
       "id": "KrDK2d8fB"
-    },
-    {
-      "id": "3DzWxSncy"
     },
     {
       "name": "duong231998",
@@ -41,6 +14,11 @@
       "name": "duong231998",
       "phone": "0914186024",
       "id": "9na6jEEgJ"
+    },
+    {
+      "name": "mickey",
+      "phone": "123456789",
+      "id": "RSkGtT136"
     }
   ]
 }

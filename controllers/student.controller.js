@@ -27,10 +27,14 @@ module.exports.addPost = (req,res) => {
 
 module.exports.detailStudent = (req,res) => {
     var id = req.params.id;
-    console.log(id)
     var students = db.get('students').find({"id":id}).value()
-    console.log(students)
     res.render('detail',{
         student:students
     })
 } 
+
+module.exports.removeStudent = (req,res) => {
+    var id = req.params.id
+    db.get('students').remove({"id":id}).write()
+    res.redirect('/student')
+}

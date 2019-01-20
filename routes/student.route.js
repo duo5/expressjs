@@ -16,4 +16,6 @@ router.post('/add', validate.addPost,controller.addPost)
 
 router.get('/detail/:id', controller.detailStudent)
 
+router.get('/remove/:id', controller.removeStudent)
+
 module.exports = router
