@@ -16,11 +16,11 @@ module.exports.search = (req,res) => {
 }
 
 module.exports.add = (req,res) => {
-    res.render('add');
+    res.render('add')
 }
 
 module.exports.addPost = (req,res) => {
-    req.body.id = shortid.generate();
+    req.body.id = shortid.generate()
     db.get('students').push(req.body).write()
     res.redirect('/student')
 }

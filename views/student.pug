@@ -4,7 +4,7 @@ block content
     form.form-inline.mx-auto.mt-md-5(action="/student/search", method="get")
         div.form-group.mx-sm-3.mb-2
             label.sr-only(for='inputPassword2') Search
-            input#inputPassword2.form-control(type='password', placeholder='key word')
+            input#inputPassword2.form-control(type='text', placeholder='key word',name="name",value=key?key:"")
         button.btn.btn-primary.mb-2(type='submit') Search
     table.table.mt-5.mb-5
         thead
