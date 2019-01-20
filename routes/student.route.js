@@ -5,8 +5,9 @@ const router = express.Router()
 
 const controller = require('../controllers/student.controller')
 const validate = require('../validate/student.validate')
+const auth = require('../middlewares/auth.middleware')
 
-router.get('', controller.renderStudent)
+router.get('',auth.authentication, controller.renderStudent)
 
 router.get('/search', controller.search)
 

@@ -1,0 +1,15 @@
+extends ../layout/common
+block content
+    if(errors)
+        each er in errors
+            .alert.alert-danger(role='alert')= er 
+    .container
+        h1.mt-5 Login
+        form(action="/auth/loginRequest", method="post")
+            .form-group
+                label(for='exampleInputEmail') Email
+                input#exampleInputEmail.form-control(type='text', placeholder='Enter Email',name="email",value=values?values.email:"")
+            .form-group
+                label(for='exampleInputPassword') Password
+                input#exampleInputPassword.form-control(type='password', placeholder='Password',name="password",value=values?values.password:"")
+            button.btn.btn-primary(type='submit') Login

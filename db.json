@@ -18,7 +18,14 @@
     {
       "name": "mickey",
       "phone": "123456789",
-      "id": "RSkGtT136"
+      "id": "RSkGtT136",
+      "email": "duong231998@gmail.com",
+      "password": "123456"
+    },
+    {
+      "name": "dugon",
+      "phone": "98765463",
+      "id": "MfD17dzVX"
     }
   ]
 }
