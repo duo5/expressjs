@@ -19,4 +19,8 @@ router.get('/detail/:id', controller.detailStudent)
 
 router.get('/remove/:id', controller.removeStudent)
 
+router.get('/update/:id',controller.updateStudent)
+
+router.post('/update/:id',controller.updateStudentPost)
+
 module.exports = router

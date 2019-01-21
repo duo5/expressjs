@@ -38,3 +38,19 @@ module.exports.removeStudent = (req,res) => {
     db.get('students').remove({"id":id}).write()
     res.redirect('/student')
 }
+
+module.exports.updateStudent = (req,res) => {
+    var id = req.params.id
+    var students = db.get('students').find({id:id}).value()    
+    res.render('update',{
+        values:students
+    })
+}
+
+module.exports.updateStudentPost = (req,res) => {
+    var id = req.params.id
+    var name = req.body.name
+    var phone = req.body.phone
+    var students = db.get('students').find({id:id}).assign({name:name, phone:phone}).write()
+    res.redirect('/student')
+}
