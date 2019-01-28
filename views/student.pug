@@ -6,7 +6,7 @@ block content
             label.sr-only(for='inputPassword2') Search
             input#inputPassword2.form-control(type='text', placeholder='key word',name="name",value=key?key:"")
         button.btn.btn-primary.mb-2(type='submit') Search
-    table.table.mt-5.mb-5.table-striped.table-responsive-md
+    table.table.mt-5.mb-5.table-striped
         thead.thead-dark
             tr
                 th(scope='col') Id
@@ -23,6 +23,6 @@ block content
                         a.btn.btn-primary(href="/student/detail/"+s.id) Detail
                         a.btn.btn-success(href="/student/update/"+s.id) Update
                         a.btn.btn-danger(href="/student/remove/"+s.id) Remove
-    img(src="/image/soda1.jpg")
-    img(src="/image/soda2.jpg")
-    img(src="/image/soda3.jpg")
+    //- img(src="/image/soda1.jpg")
+    //- img(src="/image/soda2.jpg")
+    //- img(src="/image/soda3.jpg")

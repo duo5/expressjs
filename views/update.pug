@@ -1,0 +1,15 @@
+extends ../layout/common
+block content
+    if(errors)
+        each er in errors
+            .alert.alert-danger(role='alert')= er 
+    .container
+        h1.mt-5 Update Student
+        form(action="", method="post")
+            .form-group
+                label(for='exampleInputName') Name
+                input#exampleInputName.form-control(type='text', placeholder='Enter Name',name="name",value=values?values.name:"")
+            .form-group
+                label(for='exampleInputPhone') Phone
+                input#exampleInputPhone.form-control(type='text', placeholder='Enter Phone',name="phone",value=values?values.phone:"")
+            button.btn.btn-primary(type='submit') Update

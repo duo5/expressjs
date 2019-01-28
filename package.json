@@ -14,7 +14,11 @@
     "cookie-parser": "^1.4.3",
     "express": "^4.16.4",
     "lowdb": "^1.0.0",
+<<<<<<< HEAD
     "md5": "^2.2.1",
+=======
+    "package.json": "^2.0.1",
+>>>>>>> 7d5448364c67f82cf17fbbc574527aebcfeec452
     "pug": "^2.0.3",
     "shortid": "^2.2.14"
   },
