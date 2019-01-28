@@ -1,4 +1,5 @@
 const db = require("../db")
+const md5 = require("md5");
 
 module.exports.login = (req,res) => {
     res.render('login')
@@ -21,7 +22,7 @@ module.exports.loginRequest = (req,res) => {
         return;
     }
 
-    if(student.password !== password){
+    if(student.password !== md5(password)){
         res.render('login',{
             errors:[
                 "Email or password is not validate"
@@ -31,7 +32,7 @@ module.exports.loginRequest = (req,res) => {
         return;
     }
 
-    res.cookie('id',student.id)
+    res.cookie('id',student.id,{ signed: true })
     res.redirect('/student')
 
 }

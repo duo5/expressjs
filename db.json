@@ -1,31 +1,60 @@
 {
   "students": [
     {
-      "name": "duong231998",
-      "phone": "0914186024",
-      "id": "KrDK2d8fB"
-    },
-    {
-      "name": "duong231998",
-      "phone": "0914186024",
-      "id": "5j0vnmWAL"
-    },
-    {
-      "name": "duong231998",
-      "phone": "0914186024",
-      "id": "9na6jEEgJ"
-    },
-    {
       "name": "mickey",
       "phone": "123456789",
       "id": "RSkGtT136",
       "email": "duong231998@gmail.com",
-      "password": "123456"
+      "password": "bde940dde597245b3b39bb863343581c"
     },
     {
       "name": "dugon",
       "phone": "98765463",
       "id": "MfD17dzVX"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Some one",
+      "des": "A caption for the above image",
+      "image": "/image/aa.jpg",
+      "price": 2000
+    },
+    {
+      "id": "2",
+      "name": "Some one",
+      "des": "A caption for the above image",
+      "image": "/image/aa1.jpg",
+      "price": 3000
+    },
+    {
+      "id": "3",
+      "name": "Some one",
+      "des": "A caption for the above image",
+      "image": "/image/aa4.jpg",
+      "price": 1500
+    },
+    {
+      "id": "4",
+      "name": "Some one",
+      "des": "A caption for the above image",
+      "image": "/image/dj-soda.jpg",
+      "price": 1500
+    },
+    {
+      "id": "5",
+      "name": "Some one",
+      "des": "A caption for the above image",
+      "image": "/image/anh-dj-soda-dep-1.jpg",
+      "price": 4000
+    },
+    {
+      "id": "6",
+      "name": "Some one",
+      "des": "A caption for the above image",
+      "image": "/image/soda1.jpg",
+      "price": 2500
     }
   ]
 }

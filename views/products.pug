@@ -1,0 +1,16 @@
+extends ../layout/common.pug
+block content
+    .container.w-75.mt-5
+        .row
+            each product in products
+                .col-md-4.p-3
+                    figure.figure.shadow.rounded.p-3
+                        img.rounded.img-fluid.m-0(src=product.image, alt='sexy')
+                        h3.mt-3.pt-2.border-top= product.name
+                        figcaption.figure-caption= product.des
+                        .p-3.border-top.clearfix
+                            p.text-primary.float-left.mt-2=product.price+"$"
+                            button.btn.btn-success.float-right Buy
+    nav(aria-label='Page navigation example')
+        ul.pagination
+            != page
