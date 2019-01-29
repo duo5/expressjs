@@ -1,34 +1,17 @@
 {
   "students": [
     {
-<<<<<<< HEAD
-=======
-      "name": "duong231998",
-      "phone": "0914186024",
-      "id": "5j0vnmWAL"
-    },
-    {
-      "name": "duong231998",
-      "phone": "0914186024",
-      "id": "9na6jEEgJ"
-    },
-    {
->>>>>>> 7d5448364c67f82cf17fbbc574527aebcfeec452
-      "name": "mickey",
-      "phone": "123456789",
-      "id": "RSkGtT136",
-      "email": "duong231998@gmail.com",
-      "password": "bde940dde597245b3b39bb863343581c"
-    },
-    {
-      "name": "dugon",
-      "phone": "98765463",
-      "id": "MfD17dzVX"
-    },
-    {
       "name": "Hoàng Xuân Đương",
       "phone": "0914186024",
-      "id": "HVGXPSrPi"
+      "id": "HVGXPSrPi",
+      "email": "duong231998",
+      "password": "3e48f1ce9f015cc59bd7bf0605681f28"
+    },
+    {
+      "name": "Yang chen chen",
+      "phone": "123456789",
+      "id": "GkwGpzvFE",
+      "avatar": "uploads/7f9ea9d5740287e37f0a6758fb399f02"
     }
   ],
   "products": [

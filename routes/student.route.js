@@ -1,4 +1,8 @@
 
+const multer = require('multer')
+
+const upload = multer({dest:'./public/uploads/'})
+
 const express = require('express')
 
 const router = express.Router()
@@ -13,7 +17,7 @@ router.get('/search', controller.search)
 
 router.get('/add', controller.add)
 
-router.post('/add', validate.addPost,controller.addPost)
+router.post('/add', upload.single('file'), validate.addPost, controller.addPost)
 
 router.get('/detail/:id', controller.detailStudent)
 

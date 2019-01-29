@@ -21,6 +21,7 @@ module.exports.add = (req,res) => {
 
 module.exports.addPost = (req,res) => {
     req.body.id = shortid.generate()
+    req.body.avatar = req.file.path.split('/').slice(1).join('/') 
     db.get('students').push(req.body).write()
     res.redirect('/student')
 }

@@ -16,6 +16,10 @@ const product = require('./routes/product.route')
 
 const app = express()
 
+const multer = require('multer')
+
+const upload = multer({dest:'./public/uploads'})
+
 app.set('view engine', 'pug')
 
 app.set('views', './views')
